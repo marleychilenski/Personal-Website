@@ -1,0 +1,210 @@
+* {
+  scroll-behavior: smooth;
+}
+
+/*BODY*/
+body {
+  margin: 0 auto;
+  padding: 90px 0 0 0; /* padding-top adjusted for fixed navbar */
+  background-color: rgb(247, 247, 247);
+  font-family: "regular", Courier;
+  text-align: center;
+}
+
+p {
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: black;      /* or any color you want */
+  text-decoration: none;
+}
+/*HEADINGS*/
+h1 {
+  padding-top: 20px;
+  margin-bottom: -5px; /* pulls the hr closer */
+  font-size: 35px;
+  font-family: "regular", Courier;
+}
+
+h2 {
+  margin-bottom: -5px; /* pulls the hr closer */
+  font-size: 35px;
+  font-family: "regular", Courier;
+}
+
+/*NAVBAR*/
+.navbar {
+  background-color: rgb(225, 138, 170);
+  border-color: rgb(225, 138, 170);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 90%;
+  padding: 20px 30px; /* short for top/bottom and left/right padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /*makes sure image doesnt cover it*/
+}
+
+.nav-links {
+  font-size: 15px;
+  display: flex;
+  gap: 40px; /* makes space between links */
+  list-style: none;
+  margin-left: auto;
+  margin-right: 90px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(225, 138, 170);
+}
+
+li a:hover {
+  color: white; /* makes linked list items turn white when you hover over them */
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+/*SECTIONS*/
+.aboutme {
+  scroll-margin-top: 300px; /* ensures sections are not covered by navbar */
+  padding: 10px;
+}
+
+.aboutme-p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  line-height: 22px;
+}
+
+.projects {
+  background-color: white;
+  padding: 50px;
+  scroll-margin-top: 90px;
+}
+
+.skills{
+  padding:50px;
+}
+
+.contactme {
+  background-color: white;
+  padding: 50px;
+  color: black;
+}
+
+.contact-p{
+  font-size: 15px;
+}
+
+.email-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 25px;
+  background: #e18aaa;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+
+.email-btn:hover {
+  transform: scale(1.07);
+  background: #d17298;
+  color:white; /*changes font color when you hover over the button!*/
+  cursor: pointer;
+}
+
+/*ICONS*/
+.abouticons{
+  padding-top: 15px;
+  color: rgb(225, 138, 170);
+  margin:auto;
+  padding-bottom: 50px;
+   width: 45px;
+  height: 45px;
+  transition: 0.3s ease;
+}
+
+.abouticons:hover{
+  color:#fcc2d9;
+  cursor: pointer;
+  transform: scale(1.07);
+}
+
+.techicons {
+  padding-top: 20px;
+  width: 80px;
+  height: 80px;
+  padding-bottom: 20px;
+  color: rgb(225, 138, 170);
+  margin:auto;
+  transition: 0.3s ease;
+}
+
+.techicons:hover{
+  transform: scale(1.07);
+}
+
+
+/*FOOTER*/
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: #d5d5d5;    
+  color: black;
+  text-align: center;
+
+  padding: 10px 0;
+  font-size: 12px;
+  font-family: "Courier New", monospace;
+  color:black;
+}
+
+
+/*OTHER*/
+.name {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 22px;
+}
+
+hr {
+  background-color: rgb(225, 138, 170); 
+  border: none; /* removes default HR border */ 
+  opacity: 97%; 
+  height: 4px; 
+  margin-top: -15px; 
+  width: 100px; /* fixed width */ 
+  margin: 20px auto; /* centers it */ 
+  border-radius: 15px; /* round corners */ 
+  display: block; /* lets border-radius work properly */
+}
+
+.headshot {
+  padding: 10px;
+  border-radius: 50%;
+  width: 330px;
+  height: 330px;
+  transition: 0.3s ease;
+}
+
+.headshot:hover {
+  transform: scale(1.015);
+  
+}
