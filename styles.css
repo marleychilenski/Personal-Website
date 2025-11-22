@@ -7,8 +7,9 @@ body {
   margin: 0 auto;
   padding: 90px 0 0 0; 
   background-color: rgb(247, 247, 247);
-  font-family: "regular", Courier;
+  font-family: "space mono", monospace;
   text-align: center;
+  letter-spacing: normal;
 }
 
 p {
@@ -19,11 +20,17 @@ a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 a:link,
 a:visited {
   color: black;     
+=======
+.nav-links a:link,
+.nav-links a:visited {
+>>>>>>> 8449dea (Updated website to respond to different types of devices, specifically with screen size.)
   text-decoration: none;
 }
+
 /*HEADINGS*/
 h1 {
   padding-top: 20px;
@@ -43,33 +50,43 @@ h2 {
   background-color: rgb(225, 138, 170);
   border-color: rgb(225, 138, 170);
   position: fixed;
-  top: 0;
   width: 100%;
+  top: 0;
+  left: 0;       /* start at the very left edge */
   opacity: 90%;
-  padding: 20px 30px; /* short for top/bottom and left/right padding */
+  padding: 20px 0;  /*vert pad*/
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000; /*makes sure image doesnt cover it*/
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
 .nav-links {
   font-size: 15px;
   display: flex;
-  gap: 40px; /* makes space between links */
+  gap: 40px;       /* space between links */
   list-style: none;
-  margin-left: auto;
-  margin-right: 90px;
+  margin-left: -10px;
+  margin-right: 50px; 
+  max-width: 1200px;
 }
 
-li a {
+.name {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 40px;  /* space from the left edge */
+  padding-left: 20px;
+}
+
+.navbar a {
   text-decoration: none;
   color: black;
   background-color: rgb(225, 138, 170);
 }
 
 li a:hover {
-  color: white; /* makes linked list items turn white when you hover over them */
+  color: white; 
   transition: 0.4s ease;
   cursor: pointer;
 }
@@ -83,10 +100,10 @@ li a:hover {
 .aboutme-p {
   text-align: center;
   margin: 0 auto;
-  max-width: 800px;
   padding-top: 25px;
   padding-bottom: 30px;
-  line-height: 22px;
+  max-width: 800px;
+  line-height: 30px;
 }
 
 .projects {
@@ -97,35 +114,37 @@ li a:hover {
 
 .skills{
   padding:50px;
+  scroll-margin-top: 20px; 
 }
 
 .contactme {
-  background-color: white;
   padding: 50px;
-  color: black;
+  background-color:white;
 }
 
 .contact-p{
   font-size: 15px;
+  padding-top: 20px;
+  color: black;
 }
 
-.email-btn {
+.contactme .email{
+  color: black;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 12px 25px;
   background: #e18aaa;
-  color: white;
   border-radius: 30px;
   text-decoration: none;
   transition: 0.3s ease;
   font-size: 15px;
 }
 
-.email-btn:hover {
+.email:hover {
   transform: scale(1.07);
-  background: #d17298;
-  color:white; /*changes font color when you hover over the button!*/
+  background: #eaa2be;
   cursor: pointer;
+  font-style:bold;
 }
 
 /*ICONS*/
@@ -159,7 +178,6 @@ li a:hover {
   transform: scale(1.07);
 }
 
-
 /*FOOTER*/
 footer {
   bottom: 0;
@@ -175,7 +193,6 @@ footer {
   font-family: "Courier New", monospace;
   color:black;
 }
-
 
 /*OTHER*/
 .name {
@@ -206,5 +223,36 @@ hr {
 
 .headshot:hover {
   transform: scale(1.015);
+<<<<<<< HEAD
   
 }
+=======
+}
+
+/*making this work for other devices (small)*/
+@media (max-width: 768px) { /* tablet and also smaller */
+  nav ul {
+    flex-direction: column;  /* makes it stack vertically*/
+    gap: 10px;
+  }
+  nav {
+    padding: 0 10px;         
+  }
+}
+/*for a screen bigger than 1400px*/
+@media (min-width: 1400px) {
+  .name {
+    font-size: 36px; 
+  }
+
+  .nav-links li a {
+    font-size: 18px;     
+  }
+
+  .nav-container {
+    max-width: 1400px;    
+    margin: 0 auto;      
+    padding: 0 50px;     
+  }
+}
+>>>>>>> 8449dea (Updated website to respond to different types of devices, specifically with screen size.)
