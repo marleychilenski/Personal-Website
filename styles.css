@@ -20,6 +20,16 @@ a {
   text-decoration: none;
 }
 
+
+a:link,
+a:visited {
+  color: black;     
+}
+.nav-links a:link,
+.nav-links a:visited {
+  text-decoration: none;
+}
+
 /*HEADINGS*/
 h1 {
   padding-top: 20px;
@@ -212,22 +222,9 @@ hr {
 
 .headshot:hover {
   transform: scale(1.015);
-<<<<<<< HEAD
   
 }
-=======
-}
 
-/*making this work for other devices (small)*/
-@media (max-width: 768px) { /* tablet and also smaller */
-  nav ul {
-    flex-direction: column;  /* makes it stack vertically*/
-    gap: 10px;
-  }
-  nav {
-    padding: 0 10px;         
-  }
-}
 /*for a screen bigger than 1400px*/
 @media (min-width: 1400px) {
   .name {
@@ -244,4 +241,3 @@ hr {
     padding: 0 50px;     
   }
 }
->>>>>>> 8449dea (Updated website to respond to different types of devices, specifically with screen size.)
