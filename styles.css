@@ -20,17 +20,6 @@ a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-a:link,
-a:visited {
-  color: black;     
-=======
-.nav-links a:link,
-.nav-links a:visited {
->>>>>>> 8449dea (Updated website to respond to different types of devices, specifically with screen size.)
-  text-decoration: none;
-}
-
 /*HEADINGS*/
 h1 {
   padding-top: 20px;
